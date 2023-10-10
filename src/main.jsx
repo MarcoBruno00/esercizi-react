@@ -11,10 +11,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 
 function App() {
-  return (
+  return(
     <>
-    <Hello />
+    <Hello name="marco" />
     </>
-  )  
+  )
 }
-
