@@ -3,15 +3,11 @@ import './App.css'
 
 function App() {
 
-
-  function sayHello (name){
-    return <h1>Hello, {name}!</h1>
-}
+  const name = <h1>Marco</h1>
 
   return (
     <>
-      {sayHello}
-      //darà come risultato solo "Hello, !" se non passo la variabile name//
+      {name}
     </>
   )
 }
