@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import './App.css'
 
-function Hello({name}) {
- 
+function App() {
+
+
+  function sayHello (name){
+    return <h1>Hello, {name}!</h1>
+}
 
   return (
-    
-    <h1>hello ,{name}</h1>
-
+    <>
+      {sayHello}
+      //darà come risultato solo "Hello, !" se non passo la variabile name//
+    </>
   )
 }
 
-export default Hello
+export default App
