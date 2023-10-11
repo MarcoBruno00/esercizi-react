@@ -5,9 +5,7 @@ function Hello() {
  
 
   return (
-    
-    <h2>hello , word</h2>
-    
+    <h2>hello,word</h2>
   )
 }
 
