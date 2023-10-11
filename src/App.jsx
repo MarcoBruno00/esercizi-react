@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 
-function Hello() {
+function App() {
  
 
   return (
-   <div>
-      <h2>hello , word</h2>
-   </div>
+    <>
+
+    </>
   )
 }
 
-export default Hello
+export default App
