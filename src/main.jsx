@@ -12,7 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 function App() {
   return(
     <>
-    <Welcome name="marco" />
+    <Welcome />
+    {/* se leviamo la prop name non viene stampato il nome ma solo "Welcome,"" */}
+    {/*se non aggiungo il nome marco viene renderizzato il nome messo nella prop*/}
     </>
   )
 }

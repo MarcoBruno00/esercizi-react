@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-function Welcome({name}) {
+function Welcome({name = "nome mancante"}) {
  
 
   return (
