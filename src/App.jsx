@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import './App.css'
 
-function Hello() {
- 
+function App() {
+
 
   return (
     <h2>hello,word</h2>
   )
 }
 
-export default Hello
+export default App
