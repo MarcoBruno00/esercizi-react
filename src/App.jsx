@@ -2,12 +2,19 @@ import { useState } from 'react'
 import './App.css'
 
 
-function Welcome({name , age}) {
+function AlertClock() {
+  function handleClock() {
+    
+    const clock = new Date()
+
+      alert(`it is the time ${clock.toLocaleTimeString()}`)
+
+  }
+
+
+
   return(
-      <div>
-          <p>welcome, {name}</p>
-          { age<=18 ? <p>your age is {age}</p> : <p>is very young</p>}
-      </div>
+    <button onClick={handleClock}>time!</button>
   )
 }
-export default Welcome
+export default AlertClock

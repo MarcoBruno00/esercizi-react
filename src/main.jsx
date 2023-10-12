@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Welcome from './App.jsx'
+import AlertClock from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -9,10 +9,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-function App(){
+function App() {
   return(
     <>
-      <Welcome name = "john" age={23} />    
+      <AlertClock />
     </>
   )
 }
