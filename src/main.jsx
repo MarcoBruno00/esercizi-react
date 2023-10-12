@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 function App(){
   return(
     <>
-      <Welcome name = "marco" age={23} />    
+      <Welcome name = "john" age={23} />    
     </>
   )
 }
