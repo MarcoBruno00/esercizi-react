@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 
-function Welcome({name = "nome mancante"}) {
+function Welcome({name , age}) {
  
 
   return (
-    <p>welcome , {name}</p>
+    <div>
+      <p>welcome , {name}</p>
+      <p>your age is {age}</p>
+    </div>
   )
 }
 
