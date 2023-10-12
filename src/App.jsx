@@ -6,7 +6,7 @@ function Welcome({name , age}) {
   return(
       <div>
           <p>welcome, {name}</p>
-          { name === "john" && age>=18 && age<=65 && <p>your age is {age}</p>}
+          { age<=18 ? <p>your age is {age}</p> : <p>is very young</p>}
       </div>
   )
 }
