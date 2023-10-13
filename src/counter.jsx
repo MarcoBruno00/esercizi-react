@@ -1,12 +1,10 @@
 import { useState } from "react"
 
-export function Counter() {
-    const [counter , setCounter] = useState(0)
+export function Counter({initialValue}) {
+    const [counter , setCounter] = useState(initialValue)
 
     function handleIncrement () {
         setCounter(counter + 1)
-         // usiamo la funzione dentro setCount se dobbiamo fare più operazioni su count, 
-        //sennò utilizziamo un valore immediato se dobbiamo eseguire una semplice operazione
     }
 
 

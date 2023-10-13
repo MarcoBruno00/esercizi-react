@@ -6,7 +6,7 @@ import { Counter } from './counter'
 function App() {
   return(
      <>
-      <Counter />
+      <Counter initialValue={0} />
      </>
   )
 }
