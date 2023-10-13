@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import './App.css'
+import AlertClock from './alertClock'
 
 
-function AlertClock() {
+
+function App() {
   function handleClock() {
     
     const clock = new Date()
@@ -11,10 +13,12 @@ function AlertClock() {
 
   }
 
-
-
   return(
-    <button onClick={handleClock}>time!</button>
+    <>
+      <AlertClock event = {handleClock} />
+    </>
   )
 }
-export default AlertClock
+
+
+export default App
