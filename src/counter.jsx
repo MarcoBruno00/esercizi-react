@@ -5,6 +5,8 @@ export function Counter() {
 
     function handleIncrement () {
         setCounter(counter + 1)
+         // usiamo la funzione dentro setCount se dobbiamo fare più operazioni su count, 
+        //sennò utilizziamo un valore immediato se dobbiamo eseguire una semplice operazione
     }
 
 
