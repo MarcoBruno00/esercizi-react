@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { Counter } from './counter'
-import { Clock } from './clock'
+import { MouseClicker } from './mouseClicker'
 
 
 function App() {
   return(
      <>
-      <Counter  />
-      <Clock />
+      <MouseClicker name="ONE" />
      </>
   )
 }
