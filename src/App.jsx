@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { MouseClicker } from './mouseClicker'
+import { MultiButton } from './multibutton'
 
 
 function App() {
   return(
      <>
-      <MouseClicker name="ONE" />
+     <MultiButton button1="one" button2="two" button3="three" />
      </>
   )
 }
