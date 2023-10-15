@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { MultiButton } from './multibutton'
+
+import { InterctiveWelcome } from './interectiveWelcome'
 
 
 function App() {
   return(
      <>
-     <MultiButton button1="one" button2="two" button3="three" />
+       <InterctiveWelcome />
      </>
   )
 }
