@@ -19,7 +19,16 @@ export function Login() {
             }
         })
 
-        }
+        
+    }
+    
+            const isButtonDisalbled = data.username==='' || data.password === ''
+    
+    
+            const handleButton = (event) => {
+                event.preventDefault()
+                Login(data)
+            }
 
     return(
         <div>
@@ -27,6 +36,7 @@ export function Login() {
                 <input type="text" value={data.username} onChange={handleChangeImput} />
                 <input type="password" value={data.password} onChange={handleChangeImput} />
                 <input type="checkbox" checked={data.remember} onChange={handleChangeImput} />
+                <button onClick={handleButton} disabled={isButtonDisalbled}>login</button>
             </form>
         </div>
     )
