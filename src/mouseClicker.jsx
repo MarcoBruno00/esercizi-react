@@ -3,15 +3,14 @@ import faviconImage from "./assets/favicon-16x16.png";
 
 export function MouseClicker({name}) {
     function handleClick(event) {
-        console.log(event.currentTarget.name);
+        console.log(event.target.name);
     }
 
      function handleImage  (event) {
         console.log(event.currentTarget.src);
     }
 
-
-       //vengono eseguiti insieme a causa dell'effetto bubble di html dato che l'immagine si trova all'interno del bottone
+   //togliendo il curren target dalla funzione handleclick
 
 
     return(
