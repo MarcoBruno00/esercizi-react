@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Login } from './login'
+import { FocusInput } from './focusableImput'
 
 
 
@@ -8,7 +8,7 @@ import { Login } from './login'
 function App() {
   return(
      <>
-      <Login />
+      <FocusInput />
      </>
   )
 }
