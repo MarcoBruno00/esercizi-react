@@ -1,15 +1,20 @@
 import { useEffect, useRef } from "react"
 
 export function FocusInput() {
-    const inputFocus = useRef(null)
+
+    const mountedRef = useRef(false)
+
 
     useEffect(() => {
-        inputFocus.current?.focus()
+       if(!mountedRef.current){
+        console.log("mounted for first time");
+        mountedRef.current = true
+       }
     } ,[])
 
     return(
         <>
-            <input ref={inputFocus} type="text" />       
+            <input type="text" />       
         </>
     )
 }
