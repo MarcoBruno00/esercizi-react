@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { FocusInput } from './focusableImput'
+import { Counter } from './counter'
 
 
 
@@ -8,7 +8,7 @@ import { FocusInput } from './focusableImput'
 function App() {
   return(
      <>
-      <FocusInput />
+      <Counter />
      </>
   )
 }
