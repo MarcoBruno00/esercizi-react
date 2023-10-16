@@ -2,11 +2,13 @@ export function Login (){
     function handleSubmit(event) {
         event.preventDefault()
 
-        const username = event.target.elements.namedItem('username').value 
-        const password = event.target.elements.namedItem('password').value 
-        const session = event.target.elements.namedItem('session').checked
+        //const username = event.target.elements.namedItem('username').value 
+        //const password = event.target.elements.namedItem('password').value 
+        //const session = event.target.elements.namedItem('checkbox').checked
 
-      
+        const username = event.target.value
+        const password = event.target.value
+        const session = event.target.checked
 
         const data = {
             username,
