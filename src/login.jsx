@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 
-export function Login() {
-    const[data , setData] = useState({
+export function Login({onLogin}) {
+    const [data , setData] = useState({
         username:'',
         password:'',
         remember: false
@@ -15,29 +15,29 @@ export function Login() {
         setData(data => {
             return{
                 ...data,
-                [name] : value
+                [name]: value
             }
         })
 
         
     }
     
-            const isButtonDisalbled = data.username==='' || data.password === ''
+            const isButtonDisalbled = data.username === '' || data.password === ''
     
     
             const handleButton = (event) => {
                 event.preventDefault()
-                Login(data)
+                onLogin(data)
             }
 
     return(
-        <div>
+        <>
             <form>
-                <input type="text" value={data.username} onChange={handleChangeImput} />
-                <input type="password" value={data.password} onChange={handleChangeImput} />
-                <input type="checkbox" checked={data.remember} onChange={handleChangeImput} />
+                <input type="text"  name = "username" value={data.username} onChange={handleChangeImput} />
+                <input type="password" name = "password" value={data.password} onChange={handleChangeImput} />
+                <input type="checkbox" name = "remember"checked={data.remember} onChange={handleChangeImput} />
                 <button onClick={handleButton} disabled={isButtonDisalbled}>login</button>
             </form>
-        </div>
+        </>
     )
 }
