@@ -1,50 +1,31 @@
-import React, { useState } from "react";
+export function Login (){
+    function handleSubmit(event) {
+        event.preventDefault()
 
-export function Login({ onLogin }) {
-  const [data, setData] = useState({
-    username: '',
-    password: '',
-    remember: false
-  });
+        const username = event.target.elements.namedItem('username').value 
+        const password = event.target.elements.namedItem('password').value 
+        const session = event.target.elements.namedItem('checkbox').checked
 
-  const handleInputChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
+        const data = {
+            username,
+            password,
+            session
+        }
 
-    setData(data => {
-      return {
-        ...data, 
-        [name]: value
-      }
-    });
-  }
+        console.log(data);
+    }
 
 
-  const isButtonDisabled = data.username === '' || data.password === '';
 
-  const handleButton = (event) => {
-    event.preventDafault()
-    console.log(data);
-  };
-
-
-  const handleReset = () => {
-    setData({
-        username : '',
-        password : '',
-        remember : false
-    });
-  }
-//In questo modo evitiamo il comportamento predefinito di invio del modulo
-  return (
-    <>
-      <form onSubmit={handleButton}>
-        <input type="text" name="username" value={data.username} onChange={handleInputChange} />
-        <input type="password" name="password" value={data.password} onChange={handleInputChange} />
-        <input type="checkbox" name="remember" checked={data.remember} onChange={handleInputChange} />
-        <button type="submit" onClick={handleButton} disabled={isButtonDisabled}>Login</button>
-        <button type= "button"onClick={handleReset}>reset</button>
-      </form>
-    </>
-  )
+    return(
+        <>
+        <form onSubmit={handleSubmit}>
+            <input name="username" />
+            <input name="password" type="password" />
+            <input name = "session" type="checkbox"  />
+            <button>login</button>
+            <button type="reset">reset</button>
+        </form>
+        </>
+    )
 }
