@@ -27,6 +27,15 @@ export function Login({ onLogin }) {
     onLogin(data);
   };
 
+
+  const handleReset = () => {
+    setData({
+        username : '',
+        password : '',
+        remember : false
+    });
+  }
+
   return (
     <>
       <form>
@@ -34,6 +43,7 @@ export function Login({ onLogin }) {
         <input type="password" name="password" value={data.password} onChange={handleInputChange} />
         <input type="checkbox" name="remember" checked={data.remember} onChange={handleInputChange} />
         <button onClick={handleButton} disabled={isButtonDisabled}>Login</button>
+        <button onClick={handleReset}>reset</button>
       </form>
     </>
   )
