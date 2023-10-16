@@ -24,7 +24,7 @@ export function Login({ onLogin }) {
 
   const handleButton = (event) => {
     event.preventDafault()
-    onLogin(data);
+    console.log(data);
   };
 
 
@@ -35,15 +35,15 @@ export function Login({ onLogin }) {
         remember : false
     });
   }
-
+//In questo modo evitiamo il comportamento predefinito di invio del modulo
   return (
     <>
-      <form>
+      <form onSubmit={handleButton}>
         <input type="text" name="username" value={data.username} onChange={handleInputChange} />
         <input type="password" name="password" value={data.password} onChange={handleInputChange} />
         <input type="checkbox" name="remember" checked={data.remember} onChange={handleInputChange} />
-        <button onClick={handleButton} disabled={isButtonDisabled}>Login</button>
-        <button onClick={handleReset}>reset</button>
+        <button type="submit" onClick={handleButton} disabled={isButtonDisabled}>Login</button>
+        <button type= "button"onClick={handleReset}>reset</button>
       </form>
     </>
   )
