@@ -4,7 +4,9 @@ export function Login (){
 
         const username = event.target.elements.namedItem('username').value 
         const password = event.target.elements.namedItem('password').value 
-        const session = event.target.elements.namedItem('checkbox').checked
+        const session = event.target.elements.namedItem('session').checked
+
+      
 
         const data = {
             username,
