@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-
-
 import TodoList from './todoList'
 
 
@@ -10,7 +8,7 @@ import TodoList from './todoList'
 function App() {
   return(
      <>
-      <TodoList />
+      <TodoList items = {[]}/>
      </>
   )
 }
