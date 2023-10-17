@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Counter } from './counter'
+import { Colors } from './counter'
 
 
 
@@ -8,7 +8,7 @@ import { Counter } from './counter'
 function App() {
   return(
      <>
-      <Counter />
+      <Colors items={["red" , "blue" , "yellow" , "purple"]} />
      </>
   )
 }
