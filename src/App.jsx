@@ -8,7 +8,12 @@ import { Colors } from './counter'
 function App() {
   return(
      <>
-      <Colors items={["red" , "blue" , "yellow" , "purple"]} />
+      <Colors items={[
+        {id:1 , name :"red" } , 
+        {id:2 , name :"blue" } ,
+        {id:3 , name :"yellow" },
+        {id:4 , name :"purple" }
+        ]} />
      </>
   )
 }
