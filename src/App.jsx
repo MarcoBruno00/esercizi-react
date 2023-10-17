@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 
-import { Colors } from './colors'
+
+import TodoList from './todoList'
 
 
 
@@ -9,7 +10,7 @@ import { Colors } from './colors'
 function App() {
   return(
      <>
-      <Colors/>
+      <TodoList />
      </>
   )
 }
