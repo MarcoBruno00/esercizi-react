@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import TodoList from './todoList'
+import { Welcome } from './welcome'
 
 
 
@@ -8,7 +8,7 @@ import TodoList from './todoList'
 function App() {
   return(
      <>
-      <TodoList items = {[]}/>
+      <Welcome name="marco" />
      </>
   )
 }
