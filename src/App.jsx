@@ -10,8 +10,7 @@ import { Container } from './container'
 function App() {
   return(
      <>
-     <Container >
-      <Hello />
+     <Container title={ <Hello />} >
       <Message />
       </Container>
      </>
