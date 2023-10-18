@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import { Login } from './login'
+import { Hello } from './hello'
+import { Message } from './message'
+import { Container } from './container'
 
 
 
@@ -8,7 +10,10 @@ import { Login } from './login'
 function App() {
   return(
      <>
-      <Login />
+     <Container >
+      <Hello />
+      <Message />
+      </Container>
      </>
   )
 }
