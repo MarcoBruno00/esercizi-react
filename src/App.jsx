@@ -10,15 +10,16 @@ function App() {
     setLanguage(event.target.value);
   }
 
+  //togliendo il provider avremo un messaggio nella lingua che abbiamo impostato di default che in questo caso sara l 'italiano
   return (
     <div>
       <select value={language} onChange={handleSetLanguage}>
         <option value="it">IT</option>
         <option value="en">EN</option>
       </select>
-      <LanguageContext.Provider value={language}>
+      
         <Clock />
-      </LanguageContext.Provider>
+      
     </div>
   );
 }
