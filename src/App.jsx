@@ -1,22 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import React, { useState } from "react";
+import { Clock } from "./Clock";
 import { LanguageContext } from "./LanguageContext";
-import { Clock } from './clock'
-
-
-
-
 
 function App() {
-  const [language , setLanguage]= useState("it")
+  const [language, setLanguage] = useState("it");
 
   function handleSetLanguage(event) {
-    setLanguage(event.target.value)
+    setLanguage(event.target.value);
   }
 
-  return(
-     <>
-         <div>
+  return (
+    <div>
       <select value={language} onChange={handleSetLanguage}>
         <option value="it">IT</option>
         <option value="en">EN</option>
@@ -25,7 +20,7 @@ function App() {
         <Clock />
       </LanguageContext.Provider>
     </div>
-     </>
-  )
+  );
 }
-export default App
+
+export default App;
