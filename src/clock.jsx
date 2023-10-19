@@ -22,7 +22,7 @@ export const Clock = () => {
 
   return (
     <>
-      {language === "it" ? <h2>Sono le</h2> : <h2>It is</h2>}
+      {language === "it" ? <h2>tempo corrente:</h2> : <h2>current time:</h2>}
       <h1>{time}</h1>
     </>
   );
