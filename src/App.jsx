@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
+import { Counter } from "./counter";
 
-import { GitHubUsers } from "./GitHubUsers";
 
 
 
@@ -11,7 +11,7 @@ function App() {
   
   return (
 <>
-<GitHubUsers />
+   <Counter />
 </>
   )
 }
