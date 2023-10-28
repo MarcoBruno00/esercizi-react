@@ -1,8 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { Login } from "./login";
-
-
+import { GithubUser } from "./GitHubUser";
 
 
 function App() {
@@ -11,7 +9,7 @@ function App() {
   
   return (
 <>
-   <Login />
+ <GithubUser username="marcobruno00"/> 
 </>
   )
 }
