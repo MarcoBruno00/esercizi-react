@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { GithubUser } from "./GitHubUser";
+import { CurrentPosition } from "./CurrentLocation";
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   
   return (
 <>
- <GithubUser username="marcobruno00"/> 
+<CurrentPosition />
 </>
   )
 }
