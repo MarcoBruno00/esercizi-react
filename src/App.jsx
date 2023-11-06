@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 
-import FilteredList from "./filteredList";
+import FilteredList from "./welcome";
 
 
 
@@ -12,7 +12,9 @@ function App() {
   
   return (
 <>
-< FilteredList/>
+<Routes>
+        <Route path="/" element={<Welcome name="marco" />} />
+      </Routes>
 </>
   )
 }
