@@ -1,6 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
-import { CurrentPosition } from "./CurrentLocation";
+
+import { Counter} from "./counter";
+
+
 
 
 function App() {
@@ -9,7 +12,7 @@ function App() {
   
   return (
 <>
-<CurrentPosition />
+< Counter/>
 </>
   )
 }
