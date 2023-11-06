@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 
-import { Counter} from "./counter";
+import FilteredList from "./filteredList";
 
 
 
@@ -12,7 +12,7 @@ function App() {
   
   return (
 <>
-< Counter/>
+< FilteredList/>
 </>
   )
 }
